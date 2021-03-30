@@ -7,9 +7,9 @@ version=1.17.1
 url=https://github.com/docker/compose/releases
 
 func install(){
-    # curl -L https://github.com/docker/compose/releases/download/$1/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
-    # chmod 755 /usr/local/bin/docker-compose
-    # docker-compose version
+    curl -L https://github.com/docker/compose/releases/download/$1/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
+    chmod 755 /usr/local/bin/docker-compose
+    docker-compose version
     echo $1
 }
 func help(){
